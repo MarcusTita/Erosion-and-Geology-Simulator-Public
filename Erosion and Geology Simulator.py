@@ -55,7 +55,7 @@ def listFlipper(L):
 class isome(object):
 
     def __init__(self):
-        self.rows = 5
+        self.rows = 3
         self.cols = 5
         self.noise = 1
         self.peakHeight = 5
@@ -764,7 +764,7 @@ def runMover():
 # Test Functions
 #################################################
 
-### Im good at these
+
 
 #################################################
 # Main
