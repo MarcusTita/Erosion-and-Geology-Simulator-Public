@@ -441,7 +441,7 @@ def appStarted(app):
     app.buttons['help'] += [button(3/10+2/40,1/4+1/40,1/7,1/20,'Home',helpHome,'white')]
 
     ### Splash 
-    app.buttons['splash'] = [button(1/2,9/10,1/3,1/15,'START',runTerraform)]
+    app.buttons['splash'] = [button(1/2,9/10,1/3,1/14,'START',runTerraform)]
     
     ## Lab
     app.buttons['lab'] = [button(9/10,1*1/8,1/5,1/20,'Water/Lava',toggleLiquid)]
