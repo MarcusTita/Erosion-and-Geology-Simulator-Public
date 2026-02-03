@@ -318,6 +318,9 @@ def helpHome(app):
 def runScreenCap(app):
     app.screen = 'scWindow'
     
+def greenButtonAction(app):
+    print("Green button clicked!")
+    
 def liquidify(app):
     #if app.baseIso.water:
      #   pygame.mixer.Sound.stop(app.lava)
@@ -442,6 +445,7 @@ def appStarted(app):
 
     ### Splash 
     app.buttons['splash'] = [button(1/2,9/10,1/3,1/14,'START',runTerraform)]
+    app.buttons['splash'] += [button(1/2, 11/14, 1/3, 1/14, 'Green Button', greenButtonAction, 'green')]
     
     ## Lab
     app.buttons['lab'] = [button(9/10,1*1/8,1/5,1/20,'Water/Lava',toggleLiquid)]
