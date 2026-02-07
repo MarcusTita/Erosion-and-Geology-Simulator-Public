@@ -318,8 +318,8 @@ def helpHome(app):
 def runScreenCap(app):
     app.screen = 'scWindow'
     
-def greyButtonAction(app):
-    print("Updated grey button clicked!")
+def purpleButtonAction(app):
+    print("Updated purple button clicked!")
     
 def liquidify(app):
     #if app.baseIso.water:
@@ -445,7 +445,7 @@ def appStarted(app):
 
     ### Splash 
     app.buttons['splash'] = [button(1/2,9/10,1/3,1/14,'START',runTerraform)]
-    app.buttons['splash'] += [button(1/2, 11/14, 1/3, 1/14, 'Updated Grey Button', greyButtonAction, 'grey')]
+    app.buttons['splash'] += [button(1/2, 11/14, 1/3, 1/14, 'Updated Purple Button', purpleButtonAction, 'purple')]
     
     ## Lab
     app.buttons['lab'] = [button(9/10,1*1/8,1/5,1/20,'Water/Lava',toggleLiquid)]
